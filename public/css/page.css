@@ -1,0 +1,67 @@
+body {
+    background-image: url('/ajims.png');
+    background-attachment: scroll; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100dvh;
+    margin: 0;
+
+    #watermark {
+      display: none;
+    } 
+} 
+
+.loginContainer {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 15px; 
+    margin-left: 100px; 
+}
+
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+.loginContainer input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loginContainer input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.head{
+    font-size: 22px;
+    font-display: underline;
+    background-color: initial;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        justify-content: center; 
+    }
+
+    .loginContainer {
+        width: 80%;
+        margin-left: 0;
+    }
+}

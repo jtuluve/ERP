@@ -1,0 +1,121 @@
+.table {
+    display: grid;
+    background-color: #f0f0f0;
+    margin-block: 5px 50px;
+}
+
+.table>* {
+    display: grid;
+    grid-template-columns: repeat(7, calc(100%/7 - 50px/7)) 50px;
+    background: aliceblue;
+}
+
+.table-header h4,
+.table-row span {
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    min-width: 90px;
+}
+
+.table-header h4 {
+    background-color: #132557;
+    color:white;
+    display: grid;
+    place-items: center;
+}
+
+.table-row {
+    background-color: #cfd5ea;
+    color: black;
+}
+
+.table .table-buttons{
+    min-width: unset;
+}
+
+.table-row .edit, .table-row .remove {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.table-row .edit i, .table-row .remove i {
+    font-size: 14px;
+}
+
+.table-row .edit {
+    cursor: pointer;
+    background-color: #00c400;
+    margin-bottom: 2px;
+}
+
+.table-row .remove{
+    background-color: #c40000;
+}
+
+.table-row .remove:hover {
+    background-color: #8b0000;
+}
+
+.table-row .edit:hover {
+    background-color: #037a04;
+}
+
+.table-row span:hover {
+    background-color: #c4c4c4;
+}
+
+.addRowBtnDiv,.editRowBtnDiv{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+}
+
+.addRowBtnDiv button,.editRowBtnDiv button{
+    background: #00b100;
+    color: white;
+    position: relative;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: clamp(75px,10vw,110px);
+}
+
+.addRowBtnDiv button::before{
+    content: "+";
+    display: inline-block;
+    transform: scale(1.3);
+    margin-right: 5px;
+}
+
+.editRowBtnDiv button::before{
+    content: "🖊";
+    display: inline-block;
+    transform: scale(1.1);
+    margin-right: 2px;
+}
+
+.addRowBtnDiv button:hover, .editRowBtnDiv button:hover{
+    transform: scale(1.1);
+    background: rgb(0, 150, 0);
+}
+
+@media (max-width: 480px){
+    .table:not(:has(.object))>* {
+        grid-template-columns: 4fr 1fr !important;
+    }
+    
+    .table-row *:not(:first-child):not(:last-child), .table-header *:not(:first-child){
+        display:none;
+    }
+}
