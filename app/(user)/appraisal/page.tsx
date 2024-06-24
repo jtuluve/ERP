@@ -30,7 +30,7 @@ export default function Appraisal() {
         <Link href="/" className="logo">
           <img alt="logo" src="/logo.jpg" style={{height:"100%"}}/>
         </Link>
-        <a className="web-name">AJIMS Employment Management</a>
+        <a className="web-name">ERP</a>
       </div>
       <div className="menu-container">
         <Menu />

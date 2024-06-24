@@ -40,7 +40,7 @@ const UserDetail = ({ params }) => {
 	return (
 	<div className="adminpage">
 		<div className="titlebaradmin">
-				<a className="web-name">AJIMS Employment Management</a>
+				<a className="web-name">ERP</a>
 				<Link
 					title="home"
 					className="material-symbols-outlined home"

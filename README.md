@@ -1,1 +1,1 @@
-# AJIMS Employees Management System
+# ERP
