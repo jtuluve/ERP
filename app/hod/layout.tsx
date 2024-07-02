@@ -9,19 +9,19 @@ import AdminContextProvider from "@/components/adminContext";
 //fetch all users, pass it to context
 
 export default async function RootLayout({
-	children,
+    children,
 }: {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-	const session = await getServerSession();
-	if (!session) return redirect("/");
-	if (!(await isAdmin())) return redirect("/main");
-	const result = await getUsers();
-	const data = result && JSON.parse(result);
+    const session = await getServerSession();
+    if (!session) return redirect("/");
+    if (!(await isAdmin())) return redirect("/main");
+    const result = await getUsers();
+    const data = result && JSON.parse(result);
 
-	return (
-		<>
-			<AdminContextProvider data={data}>{children}</AdminContextProvider>
-		</>
-	);
+    return (
+        <>
+            <AdminContextProvider data={data}>{children}</AdminContextProvider>
+        </>
+    );
 }
