@@ -1,0 +1,68 @@
+.hod-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.facname {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.staff-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.name-input {
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.class-section {
+    margin-bottom: 20px;
+}
+
+.class-section p {
+    margin-bottom: 10px;
+}
+
+.PSO-section,
+.PEO-section,
+.Po-section {
+    margin-top: 20px;
+}
+
+.PSO-section input,
+.PEO-section input,
+.Po-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
