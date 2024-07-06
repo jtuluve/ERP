@@ -25,7 +25,7 @@ const UserCrudPage = () => {
     return (
         <section className="crudpage">
             <div className="titlebar">
-                <img alt='logo' src="/logo.jpg" className="logo" />
+                <img alt='logo' src="/logo.png" className="logo" />
                 <a className="web-name">ERP</a>
                 <Link
                     title="home"

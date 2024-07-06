@@ -12,7 +12,7 @@ export default function Admin() {
 	return (
 		<section className="adminpage">
 			<div className="titlebar">
-				<img alt='logo' src="/logo.jpg" className="logo" />
+				<img alt='logo' src="/logo.png" className="logo" />
 				<a className="web-name">ERP</a>
 				<a
 					title="logout"
