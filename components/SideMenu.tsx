@@ -15,11 +15,11 @@ export default function SideMenu(){
 					</div>
 					<div className="box">
 						<img alt="leave" src="/leave.png" />
-						<Link href="/applyleave">Apply Leave</Link>
+						<Link href="/faculty-portal">Faculty-portal</Link>
 					</div>
 					<div className="box">
 						<img alt="tax" src="/tax.png" />
-						<Link href="/taxplanning">Tax Planning</Link>
+				  <Link href="/applyleave-taxplanning">Apply Leave/Tax Planning</Link>
 					</div>
 					<div className="box">
 						<img alt="payslip" src="/paySlip.png" />
