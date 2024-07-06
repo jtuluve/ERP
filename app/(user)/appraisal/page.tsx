@@ -28,7 +28,7 @@ export default function Appraisal() {
       <link rel="stylesheet" href="css/appraisal.css?v=1.2.3" />
       <div className="titlebar">
         <Link href="/" className="logo">
-          <img alt="logo" src="/logo.jpg" style={{height:"100%"}}/>
+          <img alt="logo" src="/logo.png" style={{height:"100%"}}/>
         </Link>
         <a className="web-name">ERP</a>
       </div>
