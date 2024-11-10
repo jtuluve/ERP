@@ -1,31 +1,32 @@
 'use client'
 
 import React, { useState } from 'react';
+import '@css/firebase.css';
 import Link from 'next/link';
 
 const UserCrudPage = () => {
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e:any) => {
         //CODE HERE
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
         //CODE HERE
     };
 
-    const handleEdit = (index) => {
+    const handleEdit = (index:any) => {
        //CODE HERE
     };
 
-    const handleDelete = (index) => {
+    const handleDelete = (index:any) => {
         //CODE HERE
     };
 
     return (
         <section className="crudpage">
             <div className="titlebar">
-                <img alt='logo' src="/logo.png" className="logo" />
-                <a className="web-name">ERP</a>
+                <img alt='logo' src="/logo.jpg" className="logo" />
+                <a className="web-name">AJIMS Employment Management</a>
                 <Link
                     title="home"
                     className="material-symbols-outlined home"

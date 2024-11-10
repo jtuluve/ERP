@@ -6,6 +6,7 @@ import "@css/comingsoon.css";
 import Link from "next/link";
 
 export default function Appraisal() {
+    //if user not logged in, redirect to login page
     const { data: session } = useSession();
     if (!session) {
         redirect("/");
@@ -13,9 +14,10 @@ export default function Appraisal() {
     return (
         <>
             <div className="titlebar">
-                <img alt="logo" src="/logo.png" className="logo" />
+                <img alt="logo" src="/logo.jpg" className="logo" />
                 <div className="information">
-                    <h1>ERP</h1>
+                    <h2>AJ Institute of Medical Sciences and Research centre</h2>
+                    <h3>Employee Management System</h3>
                 </div>
                 <Link className="clogout" href="/main">
                     Home

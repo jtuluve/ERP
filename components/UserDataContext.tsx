@@ -4,6 +4,7 @@ import { UserDocument } from "@/lib/mongoose/interface";
 import { createContext, useContext, useEffect, useState } from "react"
 
 export const UserDataContext = createContext({})
+
 export default function UserDataContextProvider({data,children}){
   const [userData,setUserData] = useState(data);
 
