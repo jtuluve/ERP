@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react';
-import '@css/firebase.css';
 import Link from 'next/link';
 
 const UserCrudPage = () => {
