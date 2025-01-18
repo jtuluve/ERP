@@ -9,11 +9,12 @@ import Link from "next/link";
 export default function Admin() {
 	const { allUsers } = useAdminData();
 	const [users, setUsers] = useState(allUsers);
+
 	return (
 		<section className="adminpage">
 			<div className="titlebar">
-				<img alt='logo' src="/logo.png" className="logo" />
-				<a className="web-name">ERP</a>
+				<img alt='logo' src="/logo.jpg" className="logo" />
+				<a className="web-name">AJIMS Employment Management</a>
 				<a
 					title="logout"
 					className="material-symbols-outlined logout"
@@ -49,7 +50,6 @@ export default function Admin() {
 								<th scope="col">Actions</th>
 							</tr>
 						</thead>
-
 						{users.map((user, index) => {
 							const { uid } = user;
 							return (

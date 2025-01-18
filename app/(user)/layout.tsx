@@ -1,4 +1,3 @@
-// "use client"
 import "@css/globals.css";
 import SessionProvider from "@comp/sessionprovider";
 import React from "react";
